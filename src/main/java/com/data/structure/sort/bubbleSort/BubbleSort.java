@@ -1,4 +1,4 @@
-package com.data.structure.sort;
+package com.data.structure.sort.bubbleSort;
 
 import java.util.Arrays;
 
@@ -7,11 +7,11 @@ import java.util.Arrays;
  */
 public class BubbleSort {
 
-    public static int arr[] = {3,9,-1,10,-2};
+    public static int arr[] = {1,2,4,3,6,5};
 
     public static void main(String[] args) {
-        //originMethod();
-        goodMethod();
+        originMethod();
+        //goodMethod();
     }
 
     /**

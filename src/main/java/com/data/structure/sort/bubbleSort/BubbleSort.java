@@ -86,4 +86,66 @@ public class BubbleSort {
             System.out.println("第"+i+1+"趟交换后的数组为："+ Arrays.toString(arr));
         }
     }
+
+    public static void oldMethod(int[] arr) {
+
+        // 设置临时变量
+        int temp = 0;
+
+        // 第一趟排序：从0~n-1开始比较，确定最大值
+        for (int i = 0; i<arr.length -1; i++) {
+            // 前者大于后者进行交换
+            if (arr[i] > arr[i+1]) {
+                temp = arr[i+1];
+                arr[i+1] =arr[i];
+                arr[i] = temp;
+            }
+        }
+        System.out.println("第一趟交换后的数组为："+ Arrays.toString(arr));
+
+        // 第二趟排序：从0~n-1-1开始比较，确定其中最大值
+        for (int i = 0; i<arr.length -1 -1; i++) {
+            // 前者大于后者进行交换
+            if (arr[i] > arr[i+1]) {
+                temp = arr[i+1];
+                arr[i+1] =arr[i];
+                arr[i] = temp;
+            }
+        }
+        System.out.println("第二趟交换后的数组为："+ Arrays.toString(arr));
+
+        // 第三趟排序：从0~n-1-2开始比较，确定其中最大值
+        for (int i = 0; i<arr.length -1 -2; i++) {
+            // 前者大于后者进行交换
+            if (arr[i] > arr[i+1]) {
+                temp = arr[i+1];
+                arr[i+1] =arr[i];
+                arr[i] = temp;
+            }
+        }
+        System.out.println("第三趟交换后的数组为："+ Arrays.toString(arr));
+
+        // 第四趟排序：从0~n-3开始比较，确定最大值
+        for (int i = 0; i<arr.length -1 -3; i++) {
+            // 前者大于后者进行交换
+            if (arr[i] > arr[i+1]) {
+                temp = arr[i+1];
+                arr[i+1] =arr[i];
+                arr[i] = temp;
+            }
+        }
+        System.out.println("第四趟交换后的数组为："+ Arrays.toString(arr));
+
+        // 第五趟排序：从0~n-4开始比较，确定最大值
+        for (int i = 0; i<arr.length -1-4; i++) {
+            // 前者大于后者进行交换
+            if (arr[i] > arr[i+1]) {
+                temp = arr[i+1];
+                arr[i+1] =arr[i];
+                arr[i] = temp;
+            }
+        }
+        System.out.println("第五趟交换后的数组为："+ Arrays.toString(arr));
+
+    }
 }

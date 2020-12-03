@@ -110,24 +110,15 @@ public class SelectSort {
      */
     public static void goodSelect(int[] arr) {
 
-        // 设置是否改变标志
-        Boolean flag = false;
-
         for (int i = 0; i < arr.length-1; i++) {
             // 设置最小值与最小值下标
             int minIndex = i;
             int min = arr[i];
             for (int j = i+1;j< arr.length; j++) {
                 if (min > arr[j]) {
-                    flag = true;
                     minIndex = j;
                     min = arr[j];
                 }
-            }
-            if (!flag) {
-                break;
-            }else {
-                flag = false;
             }
             // 交换
             arr[minIndex] = arr[i];
